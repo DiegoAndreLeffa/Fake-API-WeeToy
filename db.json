@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "email": "kenzinho@mail.com",
+      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
+      "name": "Kenzinho",
+      "age": 38,
+      "id": 1
+    },
+    {
+      "email": "brinquedo1@email.com",
+      "password": "$2a$10$F/6cnijhYmsJ8H/yV45uguqUpJW5DlJLlx51gYMT1GW9nPPCSNDVu",
+      "id": 2,
+      "name": "Brinquedo",
+      "cep": "26511-510",
+      "address": "R. Googlelandia 420",
+      "birth_date": "01/03/2023",
+      "description": ""
+    },
+    {
+      "email": "brinqued2@email.com",
+      "password": "$2a$10$vN2K7A7qGLmX/oDHzDFSiejdDzThBjOXPUG20dRZKoV29CXqodxdK",
+      "id": 3,
+      "name": "Brinquedo",
+      "cep": "26511-510",
+      "address": "R. Googlelandia 420",
+      "birth_date": "01/03/2023"
+    },
+    {
+      "email": "email1@email.com",
+      "password": "$2a$10$QG3Yvz1yfbMc5.uSOZ978ubn0p4fs0GimaF.IF8d3jgZwllEHkWL6",
+      "id": 4
+    },
+    {
+      "email": "email2@email.com",
+      "password": "$2a$10$B9RYBVOvtZjjQ9o0Ab5.R.UUHR2wceyu1VcM93kqrTtisxuEame7e",
+      "id": 5
+    },
+    {
+      "email": "email3@email.com",
+      "password": "$2a$10$WxD4a51PiRwb1nppEHpUGO5ztwoUPN25WK.rKS.hr5FTMjfe5MMzi",
+      "id": 6
+    }
+  ],
+  "toys": [
+    {
+      "userId": 2,
+      "toy_name": "Violãozinho de madeira",
+      "price": 50,
+      "img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
+      "category": "Instrumento musical",
+      "marks": "Music",
+      "description": "Violãozinho de madeira em perfeito estado, dois anos de uso.",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "toy_name": "Boneca bebê",
+      "price": 7.8,
+      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
+      "category": "Bonecos",
+      "marks": "Barbie",
+      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "toy_name": "bloquinhos de madeira",
+      "price": 24.79,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "Quebra cabeças",
+      "marks": "Bloquinho",
+      "description": "Peças de madeira um pouco gastas.",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "toy_name": "Motoquinha",
+      "price": 35.5,
+      "img": "https://a-static.mlcdn.com.br/280x210/velotrol-triciclo-motoca-motinha-tico-tico-infantil-omotcha/bestcommerce/103v/33e882328d8e7967e3a459c2ffe8a7a8.jpeg",
+      "category": "Carrinhos",
+      "marks": "Hot Weels",
+      "description": "Motoca de plástico, em perfeitas condições, dentro da caixa.",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "toy_name": "Ursinho de pelúcia",
+      "price": 7.39,
+      "img": "https://img.mybest-brazil.com.br/press_component/item_part_images/950dd6f6c1f73d0fb203044fdaa63ead.jpg?ixlib=rails-4.2.0&q=70&lossless=0&w=640&h=640&fit=clip&s=7877396b527026e982c2fa2bf196157e",
+      "category": "Pelúcias",
+      "marks": "Fofinha",
+      "description": "Ursinho de pelúcia marrom.",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "toy_name": "Brinquedo de encaixar",
+      "price": 9.95,
+      "img": "https://a-static.mlcdn.com.br/800x560/brinquedo-de-encaixar-mundo-de-bita-baldinho-de-formas-yes-toys-18-pecas/magazineluiza/180707000/bf311464914f279d646734d119bd90c1.jpg",
+      "category": "Quebra cabeças",
+      "marks": "Bloquinho",
+      "description": "Brinquedo de encarixar as formas geométricas.",
+      "id": 6
+    },
+    {
+      "userId": "3",
+      "name": "ffffff",
+      "price": 2,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "fff ",
+      "marks": "Bloff",
+      "description": "Peças de mffadeira.",
+      "id": 7
+    },
+    {
+      "userId": "3",
+      "name": "ffffff",
+      "price": 2,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "fff ",
+      "marks": "Bloff",
+      "description": "Peças de mffadeira.",
+      "id": 8
+    },
+    {
+      "userId": "3",
+      "name": "ffffff",
+      "price": 2,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "fff ",
+      "marks": "Bloff",
+      "description": "Peças de mffadeira.",
+      "id": 9
+    },
+    {
+      "userId": "3",
+      "name": "ffffff",
+      "price": 2,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "fff ",
+      "marks": "Bloff",
+      "description": "Peças de mffadeira.",
+      "id": 10
+    },
+    {
+      "userId": "3",
+      "name": "ffffff",
+      "price": 2,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "fff ",
+      "marks": "Bloff",
+      "description": "Peças de mffadeira.",
+      "id": 11
+    },
+    {
+      "userId": "3",
+      "name": "ffffff",
+      "price": 2,
+      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+      "category": "fff ",
+      "marks": "Bloff",
+      "description": "Peças de mffadeira.",
+      "id": 12
+    }
+  ],
+  "donations": [
+    {
+      "userId": 3,
+      "name": "carrinho de corrida",
+      "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSY7Bkoq-gbtroZhdryza3qmSC0mTuFtrN8dORSzaleOS7zg8dNlcHGqqT4ZF2qT099wSf8Vj8nSA&usqp=CAc",
+      "id": 1
+    }
+  ],
+  "institutions": [],
+  "purchases_historic": [
+    {
+      "userId": 3,
+      "name": "Boneca bebê",
+      "price": 7.8,
+      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
+      "category": "Bonecos",
+      "marks": "Barbie",
+      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "name": "Boneca bebê",
+      "price": 7.8,
+      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
+      "category": "Bonecos",
+      "marks": "Barbie",
+      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "name": "Boneca bebê",
+      "price": 7.8,
+      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
+      "category": "Bonecos",
+      "marks": "Barbie",
+      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
+      "id": 3
+    }
+  ]
+}
