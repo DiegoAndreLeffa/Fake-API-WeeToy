@@ -146,7 +146,7 @@ PATCH /users/id - FORMATO DA REQUISIÇÃO
 {
 "email": "email@email.com",
 "name": "Nome",
-"cep": "26511-510",
+"zip_code": "26511-510",
 "address": "R. Googlelandia 420",
 "birth_date": "01/03/2023"
 }

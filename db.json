@@ -12,7 +12,7 @@
       "password": "$2a$10$F/6cnijhYmsJ8H/yV45uguqUpJW5DlJLlx51gYMT1GW9nPPCSNDVu",
       "id": 2,
       "name": "Brinquedo",
-      "cep": "26511-510",
+      "zip_code": "26511-510",
       "address": "R. Googlelandia 420",
       "birth_date": "01/03/2023",
       "description": ""
