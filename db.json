@@ -16,30 +16,6 @@
       "address": "R. Googlelandia 420",
       "birth_date": "01/03/2023",
       "description": ""
-    },
-    {
-      "email": "brinqued2@email.com",
-      "password": "$2a$10$vN2K7A7qGLmX/oDHzDFSiejdDzThBjOXPUG20dRZKoV29CXqodxdK",
-      "id": 3,
-      "name": "Brinquedo",
-      "cep": "26511-510",
-      "address": "R. Googlelandia 420",
-      "birth_date": "01/03/2023"
-    },
-    {
-      "email": "email1@email.com",
-      "password": "$2a$10$QG3Yvz1yfbMc5.uSOZ978ubn0p4fs0GimaF.IF8d3jgZwllEHkWL6",
-      "id": 4
-    },
-    {
-      "email": "email2@email.com",
-      "password": "$2a$10$B9RYBVOvtZjjQ9o0Ab5.R.UUHR2wceyu1VcM93kqrTtisxuEame7e",
-      "id": 5
-    },
-    {
-      "email": "email3@email.com",
-      "password": "$2a$10$WxD4a51PiRwb1nppEHpUGO5ztwoUPN25WK.rKS.hr5FTMjfe5MMzi",
-      "id": 6
     }
   ],
   "toys": [
@@ -102,66 +78,6 @@
       "marks": "Bloquinho",
       "description": "Brinquedo de encarixar as formas geométricas.",
       "id": 6
-    },
-    {
-      "userId": "3",
-      "name": "ffffff",
-      "price": 2,
-      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-      "category": "fff ",
-      "marks": "Bloff",
-      "description": "Peças de mffadeira.",
-      "id": 7
-    },
-    {
-      "userId": "3",
-      "name": "ffffff",
-      "price": 2,
-      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-      "category": "fff ",
-      "marks": "Bloff",
-      "description": "Peças de mffadeira.",
-      "id": 8
-    },
-    {
-      "userId": "3",
-      "name": "ffffff",
-      "price": 2,
-      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-      "category": "fff ",
-      "marks": "Bloff",
-      "description": "Peças de mffadeira.",
-      "id": 9
-    },
-    {
-      "userId": "3",
-      "name": "ffffff",
-      "price": 2,
-      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-      "category": "fff ",
-      "marks": "Bloff",
-      "description": "Peças de mffadeira.",
-      "id": 10
-    },
-    {
-      "userId": "3",
-      "name": "ffffff",
-      "price": 2,
-      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-      "category": "fff ",
-      "marks": "Bloff",
-      "description": "Peças de mffadeira.",
-      "id": 11
-    },
-    {
-      "userId": "3",
-      "name": "ffffff",
-      "price": 2,
-      "img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-      "category": "fff ",
-      "marks": "Bloff",
-      "description": "Peças de mffadeira.",
-      "id": 12
     }
   ],
   "donations": [
@@ -173,36 +89,5 @@
     }
   ],
   "institutions": [],
-  "purchases_historic": [
-    {
-      "userId": 3,
-      "name": "Boneca bebê",
-      "price": 7.8,
-      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
-      "category": "Bonecos",
-      "marks": "Barbie",
-      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
-      "id": 1
-    },
-    {
-      "userId": 3,
-      "name": "Boneca bebê",
-      "price": 7.8,
-      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
-      "category": "Bonecos",
-      "marks": "Barbie",
-      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
-      "id": 2
-    },
-    {
-      "userId": 3,
-      "name": "Boneca bebê",
-      "price": 7.8,
-      "img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
-      "category": "Bonecos",
-      "marks": "Barbie",
-      "description": "Boneca bebê Barbie, um ano de uso, alguns arranhões.",
-      "id": 3
-    }
-  ]
+  "purchases_historic": []
 }
