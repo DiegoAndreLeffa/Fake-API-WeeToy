@@ -4,10 +4,12 @@ Este é o backend da aplicação WeeToys - Um site pra venda de brinquedos usado
 
 ## EndPoints
 
-- A API tem um total de - podendo cadastrar seu perfil, adicionar item para venda, adicionar itens para doação, excluir itens da venda,
+- A API tem um total de 12 endPoints - podendo cadastrar seu perfil, adicionar item para venda, adicionar itens para doação, excluir itens da venda,
   excluir item das doações.
 
 - O url base da API é http://localhost:3001
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=WeeToys%20Fake%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDiegoAndreLeffa%2Finsomnia-Fake-API-WeeToys%2Fmain%2FexportInsomniaWeeToys.json)
 
 ---
 
@@ -150,7 +152,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ---
 
-### Rotas que necessitam de autorização
+## Rotas que necessitam de autorização
 
 - Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma:
 
