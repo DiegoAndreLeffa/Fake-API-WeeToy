@@ -8,14 +8,16 @@
       "id": 1
     },
     {
-      "email": "brinquedo1@email.com",
-      "password": "$2a$10$F/6cnijhYmsJ8H/yV45uguqUpJW5DlJLlx51gYMT1GW9nPPCSNDVu",
-      "id": 2,
+      "email": "brinqued1@email.com",
+      "password": "$2a$10$jK7j1sTrPJwcYuJRQx.ty.vNuCM4PttmQPTLKgeNCrL4ig4za05ei",
       "name": "Brinquedo",
-      "zip_code": "26511-510",
-      "address": "R. Googlelandia 420",
-      "birth_date": "01/03/2023",
-      "description": ""
+      "id": 2,
+      "age_day": "13",
+      "age_month": "11",
+      "age_year": "20000",
+      "zip_code": "62651-652",
+      "address": "Googleland 1200",
+      "description": "Eu sou um brinquedo"
     }
   ],
   "toys": [
