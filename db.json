@@ -18,6 +18,18 @@
       "zip_code": "62651-652",
       "address": "Googleland 1200",
       "description": "Eu sou um brinquedo"
+    },
+    {
+      "email": "brinquedo2@email.com",
+      "password": "$2a$10$zj09IPAf9KyIZAGZipORx.fWpSxW8yDO1TwvyDk0iqQuXa4ukFW1q",
+      "name": "Brinquedo2",
+      "id": 3,
+      "zip_code": "62651-652",
+      "address": "Googleland 1200",
+      "description": "Eu sou um brinquedo",
+      "dayOfBirth": "13",
+      "monthOfBirth": "11",
+      "yearOfBirth": "20000"
     }
   ],
   "toys": [

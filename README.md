@@ -233,9 +233,9 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 {
 "email": "email@email.com",
 "name": "nome",
-"age_day": "2",
-"age_month": "1",
-"age_year": "2000",
+"dayOfBirth": "13",
+"monthOfBirth": "11",
+"yearOfBirth": "20000"
 "zip_code": "62651-652",
 "address": "Googleland 1200",
 "description": "Eu sou um brinquedo"
