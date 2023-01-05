@@ -1,49 +1,48 @@
-### WeeToys - API
+# WeeToys - API
 
 Este é o backend da aplicação WeeToys - Um site pra venda de brinquedos usados e doações!
 
 ## EndPoints
 
-A API tem um total de - podendo cadastrar seu perfil, adicionar item para venda, adicionar itens para doação, excluir itens da venda,
-excluir item das doações.
+- A API tem um total de - podendo cadastrar seu perfil, adicionar item para venda, adicionar itens para doação, excluir itens da venda,
+  excluir item das doações.
 
-O url base da API é
+- O url base da API é http://localhost:3001
 
-### Rotas que não precisam de autenticação
+---
 
-## Lista de brinquedos
+## Rotas que não precisam de autenticação
 
-Nessa aplicação o usuário sem fazer login ou se cadastrar pode ver os brinquedos já cadastrados na plataforma, na API podemos acessar a lista dessa forma: Aqui conseguimos ver os brinquedos.
+### Lista de brinquedos
 
-GET /toys - FORMATO DA RESPOSTA
+- Nessa aplicação o usuário sem fazer login ou se cadastrar pode ver os brinquedos já cadastrados na plataforma, na API podemos acessar a lista dessa forma: Aqui conseguimos ver os brinquedos.
 
+`GET /toys - FORMATO DA RESPOSTA`
+
+```javascript
 [
-{
-"userId": 3,
-"name": "violãozinho de madeira",
-"price": 20.95,
-"img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
-"id": 1
-},
-{
-"userId": 3,
-"name": "boneca bebê",
-"price": 7.8,
-"img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
-"id": 2
-},
-{
-"userId": 3,
-"name": "brinquedo de encaixar",
-"price": 24.79,
-"img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-"id": 3
-}
-]
+  {
+    userId: 3,
+    name: "violãozinho de madeira",
+    price: 20.95,
+    img: "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
+    id: 1,
+  },
+  {
+    userId: 3,
+    name: "boneca bebê",
+    price: 7.8,
+    img: "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
+    id: 2,
+  },
+];
+```
 
 Podemos acessar um brinquedo específico utilizando o endpoint:
 
-GET /toys/id - FORMATO DA RESPOSTA
+`GET /toys/id - FORMATO DA RESPOSTA`
+
+```javascript
 {
 "userId": 3,
 "name": "violãozinho de madeira",
@@ -51,71 +50,125 @@ GET /toys/id - FORMATO DA RESPOSTA
 "img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
 "id": 1
 }
+```
 
-## Lista de doações
+Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
-GET /donations - FORMATO DA RESPOSTA
-[
+`GET /toys/id?\_expand=user`
+
+```javascript
 {
-"userId": 3,
-"name": "brinquedo de encaixar",
-"img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
-"id": 3
+	"userId": 2,
+	"toy_name": "bloquinhos de madeira",
+	"price": 24.79,
+	"img": "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+	"category": "Quebra cabeças",
+	"marks": "Bloquinho",
+	"description": "Peças de madeira um pouco gastas.",
+	"id": 3,
+	"user": {
+		"email": "teste@email.com",
+		"password": "$2a$10$F/6cnijhYmsJ8H/lx51gY",
+		"id": ,
+		"name": "Brinquedo",
+		"cep": "26511-510",
+		"address": "R. Googlelandia 420",
+		"birth_date": "01/03/2023",
+		"description": ""
+	}
 }
-]
+```
 
-## Criação de usuário
+---
 
-POST /users - FORMATO DA REQUISIÇÃO
+### Lista de doações
 
+`GET /donations - FORMATO DA RESPOSTA`
+
+```javascript
+[
+  {
+    userId: 3,
+    name: "brinquedo de encaixar",
+    img: "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
+    id: 3,
+  },
+];
+```
+
+---
+
+### Criação de usuário
+
+`POST /users - FORMATO DA REQUISIÇÃO`
+
+```javascript
 {
 "email": "email@email.com",
 "password": "123456"
 }
+```
 
-Caso dê tudo certo, a resposta será assim:
+- Caso dê tudo certo, a resposta será assim:
 
-POST /users - FORMATO DA RESPOSTA
+`POST /users - FORMATO DA RESPOSTA`
 
+```javascript
 {
 "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJpbnF1ZWRMUBlbWFpbC5jb20iLCJpYXQiOjE2NzI3NTE0NTMsImV4cCI6MTY3Mjc1NTA1Mywic3ViIjoiMyJ9.lnOinVT_JWGN9znvWqmAmuLJXhBfqY5NTncmvsLlr0",
 "user": {
-"email": "email@email.com",
-"id":
+        "email": "email@email.com",
+        "id":
+        }
 }
-}
+```
 
-## Login
+---
 
-POST /login - FORMATO DA REQUISIÇÃO
+### Login
 
+`POST /login - FORMATO DA REQUISIÇÃO`
+
+```javascript
 {
 "email": "email@email.com",
 "password": "123456"
 }
+```
 
-Caso dê tudo certo, a resposta será assim:
+- Caso dê tudo certo, a resposta será assim:
 
+```javascript
 {
-"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJpbnF1ZWRvQGVtYWlsLmNvbSIsImlhdCI6MTY3Mjc2Njk3NSwiZXhwIjoxNjcyNzcwNTc1LCJzdWIiOiIyIn0.5SaUZdzYglSi4THOjJb-eiu7ppX3XChFRbr8UdcreBM",
+"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJpbnF1ZRvQGVtYWlsLmNvbSIsImlhdCI6MTY3Mjc2Njk3NSwiZXhwIjoxNjcyNzcwNTc1LCJzdWIiOiIyIn0.5SaUZdzYglSi4THOjJb-eiu7ppX3XChFRbr8UdcreBM",
 "user": {
-"email": "email@email.com",
-"id": 0
+        "email": "email@email.com",
+        "id":
+        }
 }
-}
+```
+
+---
 
 ### Rotas que necessitam de autorização
 
-Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma:
+- Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma:
 
-Authorization: Bearer {token}
+      `Authorization: Bearer {token}`
 
-Após o usuário estar logado, ele deve conseguir colocar os brinquedos a venda.
+- Após o usuário estar logado, ele deve conseguir colocar os brinquedos a venda.
 
-## Colocar um brinquedo para vender
+---
 
-POST /toys - FORMATO DA REQUISIÇÃO
+### Colocar um brinquedo para vender
 
+`POST /toys - FORMATO DA REQUISIÇÃO`
+
+- O body da requisição não necessita adicionar o `id`.
+
+- Obrigatorio adicionar o `userId` do usúario logado no body.
+
+```javascript
 {
 "userId": "id de usuario",
 "toy_name": "Carrinho de corrida",
@@ -124,25 +177,57 @@ POST /toys - FORMATO DA REQUISIÇÃO
 "marks": "Hot Weels",
 "description": "Carrinho de brinquedo, um pouco arranhado, três anos de uso.",
 }
+```
 
-## Historico de compras
+---
 
-## Deletar um brinquedo
+### Adicionar produtos no historico de compras
 
-DELETE /toys/id
+`POST /purchases_historic - FORMATO DA REQUISIÇÃO`
 
-Não é necessário um corpo da requisição.
+- O body da requisição não necessita adicionar o `id`.
 
-## Deletar uma doação
+- Obrigatorio adicionar o `userId` do usúario logado no body.
 
-DELETE /donations/id
+```javascript
+{
+	"userId": 3,
+	"name": "Boneca bebê",
+	"price": 7.8,
+	"img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
+	"category": "Bonecos",
+	"marks": "Barbie",
+	"description": "Boneca bebê Barbie, um ano de uso, alguns arranhões."
+}
+```
 
-Não é necessário um corpo da requisição.
+---
 
-## Atualizando os dados do perfil
+### Deletar um brinquedo
 
-PATCH /users/id - FORMATO DA REQUISIÇÃO
+`DELETE /toys/id`
 
+- Não é necessário um corpo da requisição.
+
+- Requisição não tem retorno.
+
+### Deletar uma doação
+
+`DELETE /donations/id`
+
+- Não é necessário um corpo da requisição.
+
+- Requisição não tem retorno.
+
+---
+
+## Ediatar perfil de usúario
+
+- ### Atualizando os dados do perfil
+
+`PATCH /users/id - FORMATO DA REQUISIÇÃO`
+
+```javascript
 {
 "email": "email@email.com",
 "name": "Nome",
@@ -150,3 +235,4 @@ PATCH /users/id - FORMATO DA REQUISIÇÃO
 "address": "R. Googlelandia 420",
 "birth_date": "01/03/2023"
 }
+```
