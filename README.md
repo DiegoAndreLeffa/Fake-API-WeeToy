@@ -175,6 +175,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 "userId": "id de usuario",
 "toy_name": "Carrinho de corrida",
 "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSY7Bkoq-gbtroZhdryza3qmSC0mTuFtrN8dORSzaleOS7zg8dNlcHGqqT4ZF2qT099wSf8Vj8nSA&usqp=CAc",
+"price": 20.30,
 "category": "Carrinhos",
 "marks": "Hot Weels",
 "description": "Carrinho de brinquedo, um pouco arranhado, três anos de uso.",
