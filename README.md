@@ -75,7 +75,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 		"name": "Brinquedo",
 		"cep": "26511-510",
 		"address": "R. Googlelandia 420",
-		"birth_date": "01/03/2023",
+		"dateOfBirth": "23/05/2015"
 		"description": ""
 	}
 }
