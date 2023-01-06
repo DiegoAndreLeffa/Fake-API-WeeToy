@@ -2,6 +2,16 @@
 
 Este é o backend da aplicação WeeToys - Um site pra venda de brinquedos usados e doações!
 
+## Iniciando a api
+
+- Depois de fazer o clone da fake api, abri ela no editor de código da sua escolha, abrir o terminal e rodar o comando `yarn` para baixar as bibliotecas da api.
+
+- Para rodar a api, inserir o comando `yarn start` no terminal.
+
+- Pronto, a api já esta rodando e pronta para fazer as suas requisição.
+
+---
+
 ## EndPoints
 
 - A API tem um total de 12 endPoints - podendo cadastrar seu perfil, adicionar item para venda, adicionar itens para doação, excluir itens da venda,
