@@ -240,9 +240,9 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-	"name": "violãozinho de madeira vermelho",
-	"price": 50,
-	"img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
+  "name": "violãozinho de madeira vermelho",
+  "price": 50,
+  "img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
   "category": "carrinho"
   "marks": "",
   "description": ""
