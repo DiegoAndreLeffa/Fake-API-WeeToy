@@ -234,7 +234,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ---
 
-### Editar anúncio
+### Editar produto
 
 `PATCH /toys/id`
 
