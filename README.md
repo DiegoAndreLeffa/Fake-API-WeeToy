@@ -35,14 +35,14 @@ Este é o backend da aplicação WeeToys - Um site pra venda de brinquedos usado
 [
   {
     userId: 3,
-    name: "violãozinho de madeira",
+    toy_name: "violãozinho de madeira",
     price: 20.95,
     img: "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
     id: 1,
   },
   {
     userId: 3,
-    name: "boneca bebê",
+    toy_name: "boneca bebê",
     price: 7.8,
     img: "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
     id: 2,
@@ -57,7 +57,7 @@ Podemos acessar um brinquedo específico utilizando o endpoint:
 ```javascript
 {
 "userId": 3,
-"name": "violãozinho de madeira",
+"toy_name": "violãozinho de madeira",
 "price": 20.95,
 "img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
 "id": 1
@@ -101,7 +101,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 [
   {
     userId: 3,
-    name: "brinquedo de encaixar",
+    toy_name: "brinquedo de encaixar",
     img: "https://cf.shopee.com.br/file/6a3af8111997d46e2452a27a16e4668b",
     id: 3,
   },
@@ -116,8 +116,8 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-"email": "email@email.com",
-"password": "123456"
+  "email": "email@email.com",
+  "password": "123456"
 }
 ```
 
@@ -127,11 +127,11 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJpbnF1ZWRMUBlbWFpbC5jb20iLCJpYXQiOjE2NzI3NTE0NTMsImV4cCI6MTY3Mjc1NTA1Mywic3ViIjoiMyJ9.lnOinVT_JWGN9znvWqmAmuLJXhBfqY5NTncmvsLlr0",
-"user": {
-        "email": "email@email.com",
-        "id":
-        }
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJpbnF1ZWRMUBlbWFpbC5jb20iLCJpYXQiOjE2NzI3NTE0NTMsImV4cCI6MTY3Mjc1NTA1Mywic3ViIjoiMyJ9.lnOinVT_JWGN9znvWqmAmuLJXhBfqY5NTncmvsLlr0",
+  "user": {
+          "email": "email@email.com",
+          "id":
+          }
 }
 ```
 
@@ -143,8 +143,8 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-"email": "email@email.com",
-"password": "123456"
+  "email": "email@email.com",
+  "password": "123456"
 }
 ```
 
@@ -182,13 +182,13 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-"userId": "id de usuario",
-"toy_name": "Carrinho de corrida",
-"img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSY7Bkoq-gbtroZhdryza3qmSC0mTuFtrN8dORSzaleOS7zg8dNlcHGqqT4ZF2qT099wSf8Vj8nSA&usqp=CAc",
-"price": 20.30,
-"category": "Carrinhos",
-"marks": "Hot Weels",
-"description": "Carrinho de brinquedo, um pouco arranhado, três anos de uso.",
+  "userId": "id de usuario",
+  "toy_name": "Carrinho de corrida",
+  "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSY7Bkoq-gbtroZhdryza3qmSC0mTuFtrN8dORSzaleOS7zg8dNlcHGqqT4ZF2qT099wSf8Vj8nSA&usqp=CAc",
+  "price": 20.30,
+  "category": "Carrinhos",
+  "marks": "Hot Weels",
+  "description": "Carrinho de brinquedo, um pouco arranhado, três anos de uso.",
 }
 ```
 
@@ -205,7 +205,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 ```javascript
 {
 	"userId": 3,
-	"name": "Boneca bebê",
+	"toy_name": "Boneca bebê",
 	"price": 7.8,
 	"img": "https://images.tcdn.com.br/img/img_prod/727032/boneca_bebe_te_quero_949_1_2bb5a0f480a692aa4b6702e1bcb5f18f.jpg",
 	"category": "Bonecos",
@@ -240,7 +240,7 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-  "name": "violãozinho de madeira vermelho",
+  "toy_name": "violãozinho de madeira vermelho",
   "price": 50,
   "img": "https://img.elo7.com.br/product/original/344DDC6/violao-violinha-infantil-brinquedo-musical-viola-infantil.jpg",
   "category": "carrinho"
@@ -259,11 +259,11 @@ Podemos acessar um brinquedo específico e seu anunciador utilizando o endpoint:
 
 ```javascript
 {
-"email": "email@email.com",
-"name": "nome",
-"dateOfBirth": "23/05/2015"
-"zip_code": "62651-652",
-"address": "Googleland 1200",
-"description": "Eu sou um brinquedo"
+  "email": "email@email.com",
+  "name": "nome",
+  "dateOfBirth": "23/05/2015"
+  "zip_code": "62651-652",
+  "address": "Googleland 1200",
+  "description": "Eu sou um brinquedo"
 }
 ```
